@@ -1,0 +1,97 @@
+<html>
+<html lang="en">
+<head>
+  <title> AFJEH Login Form</title>
+  <style>
+    p1 {
+        background-image:
+        url('https://mag.parsnews.com/wp-content/uploads/2022/08/10872535-1536x848.jpg');
+        width: 25%;
+      padding:25%;
+        }
+    body {
+      
+        
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      height: 100vh;
+      background-color:black;
+
+    }
+
+    form {
+      background-color:#A9A9A9;
+      padding: 20px;
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      
+    }
+
+    button {
+      background-color:#4682B4;
+      color: white;
+      padding: 20px;
+      width: 100%;
+    }
+
+
+    a {
+      color:black;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <p1></P1>
+
+  <form id="loginForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+     <p2>
+      What is your gender?
+      <button type="button" onclick="gender2()">male</button>
+      <button type="button" onclick="gender1()">female</button>
+   </p2>
+   
+    <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+  </form>
+
+  <script>
+    function login() {
+      var name = document.getElementById("name").value;
+      var password = document.getElementById("password").value;
+
+      alert("Name: " + name + "\nPassword: " + password);
+    }
+
+    function forgotPassword() {
+      alert("Forgot Password? I cant do any thing for you:).");
+    }
+    function gender2() {
+      alert("Thank you for your participation, sir.");
+    }
+     function gender1() {
+      alert("Thank you for your participation,ma'am.");
+    }
+  </script>
+
+</body>
+</html>
